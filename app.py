@@ -1,8 +1,8 @@
-from flask import Flask, render_template, url_for, request, redirect
 from flask_bootstrap import Bootstrap
-import os
+from flask import Flask, render_template , request,redirect,send_file
+import os,glob
+from flask.wrappers import Request
 from inference import predict
-import glob
 app = Flask(__name__)
 Bootstrap(app)
 
