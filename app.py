@@ -31,5 +31,5 @@ def index():
         }
         return render_template('show.html', result=result)
     return render_template('index.html')  # by default it will look in templates folder
-if __name__ == '__main__':
-    app.run(debug=True)
+if __name__ == "__main__":
+    app.run(debug=True, port=7000)
